@@ -10,3 +10,5 @@ Notificaciones Tipo Windows 10,son formularios que se muestran en forma de notif
 6. NotificationWF.Instance.DivColor = Color.GreenYellow;
 7. NotificationWF.Instance.TimeToClose = 10;
 8. NotificationWF.Instance.ShowMessge();
+![Mensajes like Windows.png]
+(https://github.com/TuringD/NotificacionesWF/blob/main/Mensajes%20like%20Windows.png)
