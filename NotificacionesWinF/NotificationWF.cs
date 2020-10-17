@@ -69,12 +69,13 @@ namespace Notificaciones
             frm.BringToFront();
             int lx = screenW - (wdt + 1);
             int LY = screenH - (hgt + 41);
-            for (int x = screenW; x > lx; x -= 15)
+            // para cambiar la velocidad en que se despliegan los mensajes se debe cambiar el numero 10 de este for
+            for (int x = screenW; x > lx; x -= 13)
             {
                 frm.Location = new Point(x, LY);
                 //Application.DoEvents();
                 frm.Refresh();
-                System.Threading.Thread.Sleep(1);
+                System.Threading.Thread.Sleep(5);
             }
         }
         /// <summary>
@@ -177,6 +178,7 @@ namespace Notificaciones
             Timer tm = (Timer)sender;
             Form frm = Application.OpenForms.OfType<Form>().Where(x => x.Name == "ntfyFrm" + tm.Tag).SingleOrDefault();
             if (frm != null) { frm.Close(); }
+            tm.Dispose();
         }
         /// <summary>
         /// Evento Cick del label lbltext
