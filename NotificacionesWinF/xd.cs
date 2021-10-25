@@ -11,4 +11,5 @@ namespace NotificacionesWinF
     class xd
     {
     }
+    //no dar control s
 }
