@@ -12,6 +12,8 @@ namespace Notificaciones
 
     public class NotificationWF
     {
+
+        //comentario
         public static NotificationWF instance = null;
         private const int wdt = 332;
         private const int hgt = 86;
